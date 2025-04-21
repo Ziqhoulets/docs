@@ -166,7 +166,7 @@ payload_json="{
     {% ifversion client-id-for-app %}\"iss\":\"${client_id}\"{% else %}\"iss\":\"${app_id}\"{% endif %}
 }"
 # Payload encode
-payload=$( echo -n "${payload_json}" | b64enc )
+payload=$( echo -n "${payload_ziqhoulets101}" | b64enc )
 
 # Signature
 header_payload="${header}"."${payload}"
